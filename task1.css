@@ -73,7 +73,7 @@
     display: block;
     border-radius: 6px;
     backface-visibility: hidden;
-    background: linear-gradient(40deg, rgba(67, 138, 243, 0.7), rgba(255, 242, 166, 0.7));
+    background: linear-gradient(40deg, rgba(120, 71, 64, 0.7), rgba(255, 242, 166, 0.7));
   }
   .front .inner {
     grid-template-rows: 5fr 1fr 1fr 2fr 1fr;
@@ -82,26 +82,16 @@
   .front h2 {
     grid-row: 2;
     margin-bottom: 0.3em;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    letter-spacing: 3px;
     color: #fff;
     font-weight: 500;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   }
-  .front .rating {
-    grid-row: 3;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 14px;
-    display: flex;
-    flex-flow: row nowrap;
-  }
-  .front .rating i {
-    margin: 0 1px;
-  }
   
   .back {
     transform: rotateY(180deg);
-    background-color: #fff;
+    background-color: bisque;
     border: 2px solid rgb(240, 240, 240);
   }
   .back .inner {
@@ -114,7 +104,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    color: #355cc9;
+    color: #60a94e;
     grid-row: 3;
   }
   .back .info:not(:first-of-type):before {
@@ -126,14 +116,14 @@
     background-color: #ccc;
   }
   .back .info span {
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 1.5em;
+    font-weight: 600;
   }
   .back .info i {
     font-size: 1.2em;
   }
   .back .info i:before {
-    background: linear-gradient(40deg, #355cc9, rgb(67, 138, 243));
+    background: linear-gradient(40deg, #60a94e, rgb(67, 138, 243));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
@@ -151,17 +141,17 @@
     grid-row: 5;
     grid-column: 1/-1;
     font-size: 0.86em;
+    color: black;
     border-radius: 5px;
     font-weight: 600;
     line-height: 1.4em;
     overflow: auto;
-    color: #355cc9;
     padding-right: 10px;
   }
   .back .product,
   .back .price {
     font-weight: 600;
-    color: #355cc9;
+    color: #60a94e;
     grid-row: 1;
     font-size: 0.86em;
   }
@@ -203,16 +193,16 @@
     background-color: #fff;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     text-shadow: none;
-    color: #355cc9;
+    color: #60a94e;
   }
   .button.return {
     line-height: 3em;
-    color: #355cc9;
-    border-color: #355cc9;
+    color: #60a94e;
+    border-color: #60a94e;
     text-shadow: none;
   }
   .button.return:hover {
-    background-color: #355cc9;
+    background-color: #60a94e;
     color: #fff;
     box-shadow: none;
   }
@@ -226,11 +216,11 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    background: rgb(133.1338582677, 156.7795275591, 222.8661417323);
+    background: rgb(156.5748987854, 204.1578947368, 144.8421052632);
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #355cc9;
+    background: rgba(120, 71, 64, 0.7);
   }
   
   /*# sourceMappingURL=task1.css.map */
